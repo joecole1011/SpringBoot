@@ -1,0 +1,7 @@
+package com.kimzun.hellospringboot.hello;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class SimpleController {
+
+}

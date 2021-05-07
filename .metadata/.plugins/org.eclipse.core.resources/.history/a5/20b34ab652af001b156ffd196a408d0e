@@ -1,0 +1,22 @@
+package com.kimzun.hellospringboot.hello;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+public class HelloApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HelloApplication.class, args);
+	}
+	@Bean
+	pubblic CommandLineRunner CommandLineRunner(ApplicationContext ctx){
+		return args ->{
+			System.out.println("Let's inspect the beans provided by Spring Boot:");
+			String[]beabNames =ctx.getBeanDefinitionNames();
+			Arrays.sort(beanNames);
+		}
+	}
+
+}

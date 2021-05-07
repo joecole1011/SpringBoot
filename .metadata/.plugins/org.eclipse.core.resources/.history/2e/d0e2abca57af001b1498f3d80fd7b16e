@@ -1,0 +1,6 @@
+package com.kimzun.hellospringboot.hello;
+package basic.boot.controller;
+
+public class SimpleController {
+
+}
