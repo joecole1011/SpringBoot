@@ -65,7 +65,7 @@ public class BankAccount {
 
 	@Override
 	public String toString() {
-		return "(ACC_NO=" + accountNo + ", PERSON_ID=" + personId + ", BALANCE=" + balance + ", STATUS=" + status + ")" ;
+		return "(ACC_NO=" + accountNo + ".PERSON_ID" + personId + ".BALANCE=" + balance + ".STATUS" + status + ")" ;
 	}
 
 }
