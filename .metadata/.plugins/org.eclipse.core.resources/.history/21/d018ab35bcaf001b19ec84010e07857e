@@ -1,5 +1,0 @@
-package com.kimzun.hellospringboot.hello.model;
-
-public class BankAccount {
-
-}

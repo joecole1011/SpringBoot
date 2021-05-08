@@ -1,7 +1,0 @@
-package com.kimzun.hellospringboot.hello.model;
-
-import java.math.BigDecimal;
-
-public class BankAccount {
-
-}
