@@ -1,0 +1,25 @@
+package com.kimzun.hellospringboot.hello.model;
+
+
+
+public class BankAccount {
+	import java.math.BigDecimal;
+
+	import javax.persistence.Column;
+	import javax.persistence.Entity;
+	import javax.persistence.Id;
+	import javax.persistence.Table;
+
+	@Entity
+	@Tabal(name ="bank_account")
+	@Id
+		@Column(name ="account_no")
+		private String accountNo;
+		@Column(name ="balance")
+		private BigDecimal balance;
+		@Column(name = "Status")
+		private Integer status;
+		@Column(name = "person_id")
+		private String personId;
+	
+}

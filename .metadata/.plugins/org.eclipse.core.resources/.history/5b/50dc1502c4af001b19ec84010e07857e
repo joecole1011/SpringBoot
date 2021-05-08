@@ -1,0 +1,9 @@
+package com.kimzun.hellospringboot.hello.model;
+
+import org.springframework.data.repository.CrudRepository;
+
+
+
+public class BankAccountRepository {
+
+}

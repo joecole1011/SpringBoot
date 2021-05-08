@@ -1,0 +1,5 @@
+package com.kimzun.hellospringboot.hello.model.copy;
+
+public class BankAccount {
+
+}
