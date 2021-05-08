@@ -9,6 +9,6 @@ public class SimpleController {
 	@RequestMapping("/")
 	@ResponseBody
 	String home() {
-		return "Hello World!! กว่าจะเข้าใจ ต้องใช้เวลา";
+		return "Hello World!!";
 	}
 }

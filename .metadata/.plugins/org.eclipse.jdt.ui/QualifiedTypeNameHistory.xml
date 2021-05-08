@@ -9,6 +9,7 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.kimzun.hellospringboot.hello.model.BankAccountRepository"/>
-    <fullyQualifiedTypeName name="com.kimzun.hellospringboot.hello.model.BankAccount"/>
     <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.lang.Iterable"/>
+    <fullyQualifiedTypeName name="com.kimzun.hellospringboot.hello.model.BankAccount"/>
 </qualifiedTypeNameHistroy>
