@@ -31,7 +31,8 @@ public class HelloApplication {
 			
 			Iterable<BankAccount> accs = bankRepository.findAll();
 			for (BankAccount acc : accs ) {
-				System.out.println(acc);				
+				System.out.println(acc);
+				
 			}
 		};
 	}

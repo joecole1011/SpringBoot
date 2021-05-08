@@ -29,10 +29,7 @@ public class HelloApplication {
 			BankAccount account = new BankAccount("Kim", "Test", new BigDecimal(20000), 0);
 			bankRepository.save(account);
 			
-			Iterable<BankAccount> accs = bankRepository.findAll();
-			for (BankAccount acc : accs ) {
-				System.out.println(acc);				
-			}
+			Iterable<BankAccount> accs = bankRepository.findAll()
 		};
 	}
 }

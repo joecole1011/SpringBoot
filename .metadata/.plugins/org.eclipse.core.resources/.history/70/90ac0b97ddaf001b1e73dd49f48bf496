@@ -17,7 +17,7 @@ import com.kimzun.hellospringboot.hello.model.BankAccountRepository;
 public class HelloApplication {
 	@Autowired
 	private BankAccountRepository bankRepository;
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(HelloApplication.class, args);
 	}
@@ -26,13 +26,9 @@ public class HelloApplication {
 	public CommandLineRunner CommandLineRunner(ApplicationContext ctx) {
 		return args -> {
 			System.out.println("Test Test");
-			BankAccount account = new BankAccount("Kim", "Test", new BigDecimal(20000), 0);
+			BankAccount account = new BankAccount("Kim", "Test",new BigDecimal(20000), 0);
 			bankRepository.save(account);
-			
-			Iterable<BankAccount> accs = bankRepository.findAll();
-			for (BankAccount acc : accs ) {
-				System.out.println(acc);				
-			}
+		
 		};
 	}
 }
@@ -46,6 +42,7 @@ public class HelloApplication {
  * 
  * } }; }
  */
+
 
 //@Bean
 //public CommandLineRunner CommandLineRunner(ApplicationContext ctx) {

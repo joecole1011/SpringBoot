@@ -30,8 +30,8 @@ public class HelloApplication {
 			bankRepository.save(account);
 			
 			Iterable<BankAccount> accs = bankRepository.findAll();
-			for (BankAccount acc : accs ) {
-				System.out.println(acc);				
+			for () {
+				
 			}
 		};
 	}
