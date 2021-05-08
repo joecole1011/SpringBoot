@@ -16,7 +16,7 @@ import com.kimzun.hellospringboot.hello.model.BankAccountRepository;
 @SpringBootApplication
 public class HelloApplication {
 	@Autowired
-	private BankAccountRepository bankRepository;
+	private BankAccountRepository bankAccountRepository;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(HelloApplication.class, args);
@@ -26,8 +26,7 @@ public class HelloApplication {
 	public CommandLineRunner CommandLineRunner(ApplicationContext ctx) {
 		return args -> {
 			System.out.println("Test Test");
-			BankAccount account = new BankAccount("Kim", "Test",new BigDecimal(20000), 0);
-			bankRepository.save(account);
+			BankAccount account = new BankAccount("Kim", "Test",new BigDecimal(1000), 0);
 		
 		};
 	}

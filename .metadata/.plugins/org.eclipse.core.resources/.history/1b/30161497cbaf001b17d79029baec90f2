@@ -9,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.repository.CrudRepository;
 
 import com.kimzun.hellospringboot.hello.model.BankAccount;
 import com.kimzun.hellospringboot.hello.model.BankAccountRepository;
@@ -16,7 +17,7 @@ import com.kimzun.hellospringboot.hello.model.BankAccountRepository;
 @SpringBootApplication
 public class HelloApplication {
 	@Autowired
-	private BankAccountRepository bankRepository;
+	private BankAccountRepository bankAccountRepository;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(HelloApplication.class, args);
@@ -27,6 +28,7 @@ public class HelloApplication {
 		return args -> {
 			System.out.println("Test Test");
 			BankAccount account = new BankAccount("Kim", "Test",new BigDecimal(20000), 0);
+			CrudRepository<BankAccount, Integer> bankRepository;
 			bankRepository.save(account);
 		
 		};
