@@ -1,0 +1,9 @@
+package com.kimzun.hellospringboot.hello.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties(prefix ="codecamp")
+public class CodeCampConfig {
+	@Value
+}

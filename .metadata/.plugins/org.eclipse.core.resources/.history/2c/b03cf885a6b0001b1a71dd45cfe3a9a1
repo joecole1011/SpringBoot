@@ -1,0 +1,10 @@
+package com.kimzun.hellospringboot.hello.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+
+
+public class DevConfig {
+
+}
